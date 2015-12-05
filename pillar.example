@@ -1,0 +1,16 @@
+reprepro:
+  repository_path: "/var/www/reprepro"
+  user: root
+  distributions:
+    - Origin: "John Black <j.black@black.org>"
+    - Label: Debian personal and test package
+    - Suide: unstable
+    - Codename: sid
+    - Architectures: i386 source
+    - Components: main
+    - Description: "Unofficial Debian packages: use at your own risk"
+    - SignWith: <MyKey>
+  options:
+    - verbose
+    - ask-passphrase
+    - "basedir ."

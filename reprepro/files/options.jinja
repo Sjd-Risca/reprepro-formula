@@ -1,0 +1,3 @@
+{% for option in salt['pillar.get']('reprepro:options', {} ) %}
+{{ option }}
+{% endfor %}
